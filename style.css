@@ -1,0 +1,76 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: relative; /* Garante que o cabeçalho é um contêiner de posicionamento */
+}
+
+.slick-carousel-container {
+    position: relative; /* Garante que os filhos posicionados absolutamente estarão relativos a este contêiner */
+}
+
+.slick-carousel {
+    width: 2035px;
+    height: 819px;
+}
+
+.slick-carousel img {
+    width: 2035px;
+    height: 819px;
+}
+
+.slick-carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2035px;
+    height: 819px;
+    background-color: rgba(0, 0, 0, 0.5); /* cor preta com 50% de opacidade */
+    pointer-events: none; /* permite clicar nos elementos abaixo do overlay */
+}
+
+.contact-header {
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    left: 50%; /* Coloca o elemento no centro horizontal */
+    transform: translateX(-50%); /* Move o elemento de volta 50% do seu próprio tamanho */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    padding: 20px;
+}
+
+
+#phone-info, #mail-info {
+    display: flex; /* elementos internos são flexíveis */
+    align-items: center; /* alinha itens verticalmente */
+    position: relative;
+}
+
+#phone-info img, #mail-info img {
+    height: 39px; /* ajuste conforme necessário */
+    width: auto; /* largura automática */
+}
+
+#phone-info img, #mail-info img {
+    margin-right: 15px;
+}
+
+#phone-info {
+    right: 50%;
+}
+
+#mail-info {
+    left: 50%;
+}
+
+
