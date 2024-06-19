@@ -46,7 +46,7 @@ body {
     align-items: center;
     gap: 20px;
     color: white;
-    padding: 20px;
+    padding: 10px;
 }
 
 
@@ -66,11 +66,72 @@ body {
 }
 
 #phone-info {
-    right: 50%;
+    right: 70%;
 }
 
 #mail-info {
     left: 50%;
 }
 
+#horizontal-line {
+    border: none;
+    height: 3px;
+    background-color: white; 
+    margin: 20px 0; /* Isso adiciona espaço acima e abaixo da linha */
+    margin-top: 80px;
+}
+
+.menu-header {
+    position: absolute; /* ou 'fixed' se você quiser que ele fique fixo ao rolar a página */
+    z-index: 10; /* qualquer valor maior que o z-index do carousel */
+    top: 0; 
+    left: 0; 
+    width: 100%; /* Mantém a largura completa */
+    margin-top: 20px;
+    left: 50%;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    display: flex;
+    transform: translateX(-50%);  /* Move o elemento para o centro */
+}
+
+.menu-header img {
+    width: 300px;
+    height: 300px;
+    vertical-align: middle; /* Alinha verticalmente com os itens da lista */
+}
+
+.menu-header li {
+    display: inline-block;
+    margin-right: 60px; /* Espaçamento entre os itens da lista */
+}
+
+.menu-header li:last-child {
+    margin-right: 0; /* Remove a margem direita do último item */
+}
+
+.menu-header a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.menu-header button {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    background-color: #FF4B2F;
+    border: none;
+    width: 190px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.menu-background-header {
+    background-color: rgba(121, 121, 121, 0.5);
+    height: 100px;
+}
 
